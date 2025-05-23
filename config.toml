@@ -2,6 +2,7 @@ baseURL = "/"
 languageCode = "zh-TW"
 title = "YuunJiee's Blog"
 theme = "paper"
+publishDir = "docs"
 
 [params]
   # color style
