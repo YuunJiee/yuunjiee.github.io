@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://yuunjiee.github.io/"
 languageCode = "zh-TW"
 title = "YuunJiee's Blog"
 theme = "paper"
