@@ -1,0 +1,35 @@
+baseURL = "/"
+languageCode = "zh-TW"
+title = "YuunJiee's Blog"
+theme = "paper"
+
+[params]
+  # color style
+  color = "linen"
+
+  # header social icons
+  github = "YuunJiee"
+  rss = true
+
+  # home page profile
+  avatar = "h245364612@gmail.com"
+  name = "YuunJiee"
+  bio = "Hi! I'm YunJie."
+
+  # misc
+  disableHLJS = true
+  disablePostNavigation = true
+  monoDarkIcon = true
+  math = true
+  localKatex = false
+  favicon = "favicon.ico"
+  appleTouchIcon = "apple-touch-icon.png"
+
+[params.giscus]
+  repo = "YuunJiee/yuunjiee.github.io"       
+  repoId = "R_kgDOOvT2RQ"
+  category = "General"
+  categoryId = "DIC_kwDOOvT2Rc4CqgoV"
+  mapping = "pathname"
+  theme = "transparent"
+  lang = "zh-TW"
