@@ -34,3 +34,10 @@ publishDir = "docs"
   mapping = "pathname"
   theme = "transparent"
   lang = "zh-TW"
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 10
