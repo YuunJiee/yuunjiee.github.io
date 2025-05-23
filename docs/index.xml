@@ -1,18 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home on YuunJiee&#39;s Blog</title>
-    <link>https://yuunjiee.github.io/</link>
-    <description>Recent content in Home on YuunJiee&#39;s Blog</description>
+    <title>YuunJiee&#39;s Blog</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on YuunJiee&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>zh-TW</language>
-    <lastBuildDate>Sat, 24 May 2025 00:19:29 +0800</lastBuildDate>
-    <atom:link href="https://yuunjiee.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 24 May 2025 01:35:30 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Sat, 24 May 2025 01:35:30 +0800</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;p&gt;嗨！我是 &lt;strong&gt;YuunJiee&lt;/strong&gt;，一位熱愛學習的學生&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;興趣&#34;&gt;興趣&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;唱歌、聽歌&lt;/li&gt;&#xA;&lt;li&gt;學習新知識（AI、網頁設計、語言）&lt;/li&gt;&#xA;&lt;li&gt;信仰與靈修&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;目前的目標&#34;&gt;目前的目標&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;經營個人部落格，分享知識與作品&lt;/li&gt;&#xA;&lt;li&gt;持續學習程式與人工智慧技術&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
     <item>
       <title>Hello World</title>
-      <link>https://yuunjiee.github.io/posts/hello-world/</link>
+      <link>http://localhost:1313/posts/hello-world/</link>
       <pubDate>Sat, 24 May 2025 00:19:29 +0800</pubDate>
-      <guid>https://yuunjiee.github.io/posts/hello-world/</guid>
+      <guid>http://localhost:1313/posts/hello-world/</guid>
       <description>&lt;p&gt;這是我的第一篇 Hugo 部落格文章！&lt;/p&gt;</description>
     </item>
   </channel>

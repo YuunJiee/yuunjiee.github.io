@@ -1,6 +1,6 @@
 ---
-title: "About me"
-date: 2025-05-24
+title: "About"
+date: 2025-05-24T01:35:30+08:00
 draft: false
 ---
 
@@ -20,4 +20,3 @@ draft: false
 
 - 經營個人部落格，分享知識與作品
 - 持續學習程式與人工智慧技術
-
