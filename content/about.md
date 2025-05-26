@@ -1,7 +1,7 @@
 ---
 title: "About"
 date: 2025-05-24T01:35:30+08:00
-draft: true
+draft: false
 ---
 
 嗨！我是 **YuunJiee**，一位喜歡學習的學生，即將進入中央大學資工所。

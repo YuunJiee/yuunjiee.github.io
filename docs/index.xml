@@ -15,5 +15,12 @@
       <guid>https://yuunjiee.github.io/posts/google-form-to-doc/</guid>
       <description>&lt;p&gt;在工作或學校專案中，偶爾需要把 Google 表單的回覆內容製作成正式文件，例如報告、申請書或工作紀錄。每次手動複製貼上資料，既花時間又容易出錯。&lt;/p&gt;&#xA;&lt;p&gt;其實，我們可以利用 Google Apps Script（GAS）來自動化這個流程！本文將教你如何用 GAS 一鍵將表單資料產生成文件，節省時間、提高效率！&lt;/p&gt;&#xA;&lt;h2 id=&#34;一確認文件內容&#34;&gt;一、確認文件內容&lt;/h2&gt;&#xA;&lt;p&gt;第一步，請先將要填寫的文件格式整理好，當作後續自動化的「範本」。建議先使用 Word 來編輯排版，因為 Google 文件在表格編輯的彈性，可能不如 Word 方便。&lt;/p&gt;&#xA;&lt;p&gt;完成後，再將 Word 文件上傳到 Google 雲端硬碟，並轉換成 Google 文件格式，作為我們的自動化範本。&lt;/p&gt;&#xA;&lt;p&gt;下面這張圖，可以看見如何 Word 文件轉成 Google 文件：&lt;br&gt;&#xA;&lt;img src=&#34;word-to-google-doc.jpg&#34; alt=&#34;Word 轉 Google 文件示意圖&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;待續&amp;hellip;&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>About</title>
+      <link>https://yuunjiee.github.io/about/</link>
+      <pubDate>Sat, 24 May 2025 01:35:30 +0800</pubDate>
+      <guid>https://yuunjiee.github.io/about/</guid>
+      <description>&lt;p&gt;嗨！我是 &lt;strong&gt;YuunJiee&lt;/strong&gt;，一位喜歡學習的學生，即將進入中央大學資工所。&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;我的興趣&#34;&gt;我的興趣&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;唱歌、聽音樂&lt;/li&gt;&#xA;&lt;li&gt;寫程式、網頁設計&lt;/li&gt;&#xA;&lt;li&gt;看小說、追劇&lt;/li&gt;&#xA;&lt;li&gt;信仰與靈修&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;目前的目標&#34;&gt;目前的目標&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;經營個人部落格，分享我的學習與作品&lt;/li&gt;&#xA;&lt;li&gt;持續精進程式與人工智慧技術&lt;/li&gt;&#xA;&lt;li&gt;提升英文能力，強化口說與聽力&lt;/li&gt;&#xA;&lt;li&gt;預習並學習研究所相關知識&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
   </channel>
 </rss>
