@@ -1,5 +1,5 @@
 ---
-title: "Home"
+title: "YuunJiee's Blog"
 draft: false
 ---
 
