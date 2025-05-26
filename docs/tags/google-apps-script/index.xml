@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Google Apps Script on YuunJiee&#39;s Blog</title>
+    <link>http://localhost:1313/tags/google-apps-script/</link>
+    <description>Recent content in Google Apps Script on YuunJiee&#39;s Blog</description>
+    <generator>Hugo</generator>
+    <language>zh-TW</language>
+    <lastBuildDate>Sat, 24 May 2025 01:35:30 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/google-apps-script/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【教學】用 Google Apps Script 讓表單資料自動轉成文件</title>
+      <link>http://localhost:1313/posts/google-form-to-doc/</link>
+      <pubDate>Sat, 24 May 2025 01:35:30 +0800</pubDate>
+      <guid>http://localhost:1313/posts/google-form-to-doc/</guid>
+      <description>&lt;p&gt;在工作或學校專案中，偶爾需要把 Google 表單的回覆內容製作成正式文件，例如報告、申請書或工作紀錄。每次手動複製貼上資料，既花時間又容易出錯。&#xA;其實，我們可以利用 Google Apps Script（GAS）來自動化這個流程！本文將教你如何用 GAS 一鍵將表單資料產生成文件，節省時間、提高效率！&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
