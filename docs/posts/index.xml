@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on YuunJiee&#39;s Blog</title>
-    <link>http://localhost:1313/posts/</link>
+    <link>https://yuunjiee.github.io/posts/</link>
     <description>Recent content in Posts on YuunJiee&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>zh-TW</language>
     <lastBuildDate>Sat, 24 May 2025 01:35:30 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yuunjiee.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>【教學】用 Google Apps Script 讓表單資料自動轉成文件</title>
-      <link>http://localhost:1313/posts/google-form-to-doc/</link>
+      <link>https://yuunjiee.github.io/posts/google-form-to-doc/</link>
       <pubDate>Sat, 24 May 2025 01:35:30 +0800</pubDate>
-      <guid>http://localhost:1313/posts/google-form-to-doc/</guid>
+      <guid>https://yuunjiee.github.io/posts/google-form-to-doc/</guid>
       <description>&lt;p&gt;在工作或學校專案中，偶爾需要把 Google 表單的回覆內容製作成正式文件，例如報告、申請書或工作紀錄。每次手動複製貼上資料，既花時間又容易出錯。&lt;/p&gt;&#xA;&lt;p&gt;其實，我們可以利用 Google Apps Script（GAS）來自動化這個流程！本文將教你如何用 GAS 一鍵將表單資料產生成文件，節省時間、提高效率！&lt;/p&gt;&#xA;&lt;h2 id=&#34;目錄&#34;&gt;目錄&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#section-1&#34;&gt;確認文件內容&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#section-2&#34;&gt;製作 Google 表單&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#section-3&#34;&gt;進入 Google Apps Script 編輯器&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;section-1&#34;&gt;1. 確認文件內容&lt;/h2&gt;&#xA;&lt;p&gt;請先將要填寫的文件格式整理好，當作後續自動化的「範本」。建議先使用 Word 來編輯排版，因為 Google 文件在表格編輯的彈性，可能不如 Word 方便。&lt;/p&gt;&#xA;&lt;p&gt;完成後，再將 Word 文件上傳到 Google 雲端硬碟，並轉換成 Google 文件格式，作為我們的自動化範本。&lt;/p&gt;&#xA;&lt;p&gt;下面這張圖，可以看見如何 Word 文件轉成 Google 文件：&lt;br&gt;&#xA;&lt;img src=&#34;word-to-google-doc.jpg&#34; alt=&#34;Word 轉 Google 文件示意圖&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;section-2&#34;&gt;2. 製作 Google 表單&lt;/h2&gt;&#xA;&lt;p&gt;根據你剛剛整理好的文件內容，開始設計一份 Google 表單。這份表單的每筆回覆將會成為產生文件的資料來源。&lt;/p&gt;&#xA;&lt;p&gt;在設計表單時，請對應文件中的每個欄位，設定合適的表單問題類型。&lt;/p&gt;&#xA;&lt;p&gt;下圖是 Google 表單編輯時的示意畫面：&#xA;&lt;img src=&#34;create-a-form.jpg&#34; alt=&#34;Google 表單示意圖&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;以下是常見問題類型與應用範例：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;簡答題&lt;/strong&gt;：例如會議名稱、填寫人等&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;詳答題&lt;/strong&gt;：適合會議摘要、內容說明等需要多行輸入的部分&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;單選題&lt;/strong&gt;：例如是否需要後續追蹤（是/否）&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;多選題&lt;/strong&gt;：例如後續追蹤項目（多個項目可勾選）&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;日期題&lt;/strong&gt;：例如會議日期、截止日期等&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;建議在「設定」分頁中，開啟「收集電子郵件地址」，方便後續追蹤或聯絡填表人：&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;allow-check-email.jpg&#34; alt=&#34;開啟收集電子郵件地址示意圖&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;完成表單後，接著到「回覆」分頁，點擊「連接至試算表」以建立回覆試算表。&lt;/p&gt;&#xA;&lt;p&gt;現在，你就可以先自行填寫一次，送出後即可在試算表中看到結果，請確認確保資料結構正確。&lt;/p&gt;&#xA;&lt;p&gt;下圖是回覆試算表的範例畫面：&#xA;&lt;img src=&#34;response-sheet-1.jpg&#34; alt=&#34;回覆試算表示意圖&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;section-3&#34;&gt;3. 進入 Google Apps Script 編輯器&lt;/h2&gt;&#xA;&lt;p&gt;待續&amp;hellip;&lt;/p&gt;</description>
     </item>
   </channel>
