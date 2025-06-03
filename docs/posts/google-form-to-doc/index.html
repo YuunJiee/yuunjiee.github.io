@@ -11,7 +11,7 @@
   style="--bg:#faf8f1"
   lang="zh-TW"
   dir="ltr"
-><head>
+><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta
@@ -31,7 +31,7 @@
 
 確認文件內容
 製作 Google 表單
-進入 Google Apps Script 編輯器
+撰寫 Apps Script 程式碼
 
 1. 確認文件內容
 請先將要填寫的文件格式整理好，當作後續自動化的「範本」。建議先使用 Word 來編輯排版，因為 Google 文件在表格編輯的彈性，可能不如 Word 方便。
@@ -45,11 +45,11 @@
 
 以下是常見問題類型與應用範例：
 
-簡答題：例如會議名稱、填寫人等
-詳答題：適合會議摘要、內容說明等需要多行輸入的部分
-單選題：例如是否需要後續追蹤（是/否）
-多選題：例如後續追蹤項目（多個項目可勾選）
-日期題：例如會議日期、截止日期等
+簡答題：會議名稱、填寫人等
+詳答題：會議摘要、內容說明等
+單選題：是否需要後續追蹤（是/否）
+多選題：後續追蹤項目（可多選）
+日期題：會議日期、截止日期等
 
 建議在「設定」分頁中，開啟「收集電子郵件地址」，方便後續追蹤或聯絡填表人：
 
@@ -57,16 +57,16 @@
 現在，你就可以先自行填寫一次，送出後即可在試算表中看到結果，請確認確保資料結構正確。
 下圖是回覆試算表的範例畫面：
 
-3. 進入 Google Apps Script 編輯器
-待續&hellip;" />
-  <meta name="author" content="YuunJiee" /><link rel="preload stylesheet" as="style" href="https://yuunjiee.github.io/main.min.css" />
+3. 撰寫 Apps Script 程式碼
+在回覆試算表中，點擊「擴充功能」，再按下「Apps Script」，就能開啟 Google Apps Script 的開發環境。" />
+  <meta name="author" content="YuunJiee" /><link rel="preload stylesheet" as="style" href="http://localhost:1313/main.min.css" />
 
   
-  <link rel="preload" as="image" href="https://yuunjiee.github.io/theme.svg" />
+  <link rel="preload" as="image" href="http://localhost:1313/theme.svg" />
 
   <link rel="preload" as="image" href="https://www.gravatar.com/avatar/5bb16832a31c1aad2ce9fc091c591f97?s=160&amp;d=identicon" />
 
-  <link rel="preload" as="image" href="https://yuunjiee.github.io/github.svg" /><link rel="preload" as="image" href="https://yuunjiee.github.io/rss.svg" />
+  <link rel="preload" as="image" href="http://localhost:1313/github.svg" /><link rel="preload" as="image" href="http://localhost:1313/rss.svg" />
 
   <link
   rel="stylesheet"
@@ -104,70 +104,14 @@
   
   <link
     rel="icon"
-    href="https://yuunjiee.github.io/favicon.ico"
+    href="http://localhost:1313/favicon.ico"
   />
   <link
     rel="apple-touch-icon"
-    href="https://yuunjiee.github.io/apple-touch-icon.png"
+    href="http://localhost:1313/apple-touch-icon.png"
   />
 
   <meta name="generator" content="Hugo 0.147.5">
-  <meta itemprop="name" content="【教學】用 Google Apps Script 讓表單資料自動轉成文件">
-  <meta itemprop="description" content="在工作或學校專案中，偶爾需要把 Google 表單的回覆內容製作成正式文件，例如報告、申請書或工作紀錄。每次手動複製貼上資料，既花時間又容易出錯。
-其實，我們可以利用 Google Apps Script（GAS）來自動化這個流程！本文將教你如何用 GAS 一鍵將表單資料產生成文件，節省時間、提高效率！
-目錄 確認文件內容 製作 Google 表單 進入 Google Apps Script 編輯器 1. 確認文件內容 請先將要填寫的文件格式整理好，當作後續自動化的「範本」。建議先使用 Word 來編輯排版，因為 Google 文件在表格編輯的彈性，可能不如 Word 方便。
-完成後，再將 Word 文件上傳到 Google 雲端硬碟，並轉換成 Google 文件格式，作為我們的自動化範本。
-下面這張圖，可以看見如何 Word 文件轉成 Google 文件：
-2. 製作 Google 表單 根據你剛剛整理好的文件內容，開始設計一份 Google 表單。這份表單的每筆回覆將會成為產生文件的資料來源。
-在設計表單時，請對應文件中的每個欄位，設定合適的表單問題類型。
-下圖是 Google 表單編輯時的示意畫面： 以下是常見問題類型與應用範例：
-簡答題：例如會議名稱、填寫人等 詳答題：適合會議摘要、內容說明等需要多行輸入的部分 單選題：例如是否需要後續追蹤（是/否） 多選題：例如後續追蹤項目（多個項目可勾選） 日期題：例如會議日期、截止日期等 建議在「設定」分頁中，開啟「收集電子郵件地址」，方便後續追蹤或聯絡填表人：
-完成表單後，接著到「回覆」分頁，點擊「連接至試算表」以建立回覆試算表。
-現在，你就可以先自行填寫一次，送出後即可在試算表中看到結果，請確認確保資料結構正確。
-下圖是回覆試算表的範例畫面： 3. 進入 Google Apps Script 編輯器 待續…">
-  <meta itemprop="datePublished" content="2025-05-24T01:35:30+08:00">
-  <meta itemprop="dateModified" content="2025-05-24T01:35:30+08:00">
-  <meta itemprop="wordCount" content="68">
-  <meta itemprop="keywords" content="Google Apps Script,Google 表單,自動化"><meta property="og:url" content="https://yuunjiee.github.io/posts/google-form-to-doc/">
-  <meta property="og:site_name" content="YuunJiee&#39;s Blog">
-  <meta property="og:title" content="【教學】用 Google Apps Script 讓表單資料自動轉成文件">
-  <meta property="og:description" content="在工作或學校專案中，偶爾需要把 Google 表單的回覆內容製作成正式文件，例如報告、申請書或工作紀錄。每次手動複製貼上資料，既花時間又容易出錯。
-其實，我們可以利用 Google Apps Script（GAS）來自動化這個流程！本文將教你如何用 GAS 一鍵將表單資料產生成文件，節省時間、提高效率！
-目錄 確認文件內容 製作 Google 表單 進入 Google Apps Script 編輯器 1. 確認文件內容 請先將要填寫的文件格式整理好，當作後續自動化的「範本」。建議先使用 Word 來編輯排版，因為 Google 文件在表格編輯的彈性，可能不如 Word 方便。
-完成後，再將 Word 文件上傳到 Google 雲端硬碟，並轉換成 Google 文件格式，作為我們的自動化範本。
-下面這張圖，可以看見如何 Word 文件轉成 Google 文件：
-2. 製作 Google 表單 根據你剛剛整理好的文件內容，開始設計一份 Google 表單。這份表單的每筆回覆將會成為產生文件的資料來源。
-在設計表單時，請對應文件中的每個欄位，設定合適的表單問題類型。
-下圖是 Google 表單編輯時的示意畫面： 以下是常見問題類型與應用範例：
-簡答題：例如會議名稱、填寫人等 詳答題：適合會議摘要、內容說明等需要多行輸入的部分 單選題：例如是否需要後續追蹤（是/否） 多選題：例如後續追蹤項目（多個項目可勾選） 日期題：例如會議日期、截止日期等 建議在「設定」分頁中，開啟「收集電子郵件地址」，方便後續追蹤或聯絡填表人：
-完成表單後，接著到「回覆」分頁，點擊「連接至試算表」以建立回覆試算表。
-現在，你就可以先自行填寫一次，送出後即可在試算表中看到結果，請確認確保資料結構正確。
-下圖是回覆試算表的範例畫面： 3. 進入 Google Apps Script 編輯器 待續…">
-  <meta property="og:locale" content="zh_TW">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2025-05-24T01:35:30+08:00">
-    <meta property="article:modified_time" content="2025-05-24T01:35:30+08:00">
-    <meta property="article:tag" content="Google Apps Script">
-    <meta property="article:tag" content="Google 表單">
-    <meta property="article:tag" content="自動化">
-
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="【教學】用 Google Apps Script 讓表單資料自動轉成文件">
-  <meta name="twitter:description" content="在工作或學校專案中，偶爾需要把 Google 表單的回覆內容製作成正式文件，例如報告、申請書或工作紀錄。每次手動複製貼上資料，既花時間又容易出錯。
-其實，我們可以利用 Google Apps Script（GAS）來自動化這個流程！本文將教你如何用 GAS 一鍵將表單資料產生成文件，節省時間、提高效率！
-目錄 確認文件內容 製作 Google 表單 進入 Google Apps Script 編輯器 1. 確認文件內容 請先將要填寫的文件格式整理好，當作後續自動化的「範本」。建議先使用 Word 來編輯排版，因為 Google 文件在表格編輯的彈性，可能不如 Word 方便。
-完成後，再將 Word 文件上傳到 Google 雲端硬碟，並轉換成 Google 文件格式，作為我們的自動化範本。
-下面這張圖，可以看見如何 Word 文件轉成 Google 文件：
-2. 製作 Google 表單 根據你剛剛整理好的文件內容，開始設計一份 Google 表單。這份表單的每筆回覆將會成為產生文件的資料來源。
-在設計表單時，請對應文件中的每個欄位，設定合適的表單問題類型。
-下圖是 Google 表單編輯時的示意畫面： 以下是常見問題類型與應用範例：
-簡答題：例如會議名稱、填寫人等 詳答題：適合會議摘要、內容說明等需要多行輸入的部分 單選題：例如是否需要後續追蹤（是/否） 多選題：例如後續追蹤項目（多個項目可勾選） 日期題：例如會議日期、截止日期等 建議在「設定」分頁中，開啟「收集電子郵件地址」，方便後續追蹤或聯絡填表人：
-完成表單後，接著到「回覆」分頁，點擊「連接至試算表」以建立回覆試算表。
-現在，你就可以先自行填寫一次，送出後即可在試算表中看到結果，請確認確保資料結構正確。
-下圖是回覆試算表的範例畫面： 3. 進入 Google Apps Script 編輯器 待續…">
-
-  <link rel="canonical" href="https://yuunjiee.github.io/posts/google-form-to-doc/" />
 </head>
 <body
     class="bg-(--bg) text-black antialiased duration-200 ease-out [-webkit-tap-highlight-color:transparent] dark:text-white"
@@ -177,7 +121,7 @@
   <div class="relative z-50 flex items-center ltr:mr-auto rtl:ml-auto">
     <a
       class="-translate-y-[1px] text-2xl font-medium"
-      href="https://yuunjiee.github.io/"
+      href="http://localhost:1313/"
       >YuunJiee&#39;s Blog</a
     >
     <div
@@ -257,7 +201,7 @@
       <a
         class="h-7 w-7 text-[0px] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
         style="--url: url(./rss.svg)"
-        href="https://yuunjiee.github.io/index.xml"
+        href="http://localhost:1313/index.xml"
         target="_blank"
         rel="alternate"
       >rss</a>
@@ -276,7 +220,7 @@
 <ol>
 <li><a href="#section-1">確認文件內容</a></li>
 <li><a href="#section-2">製作 Google 表單</a></li>
-<li><a href="#section-3">進入 Google Apps Script 編輯器</a></li>
+<li><a href="#section-3">撰寫 Apps Script 程式碼</a></li>
 </ol>
 <h2 id="section-1">1. 確認文件內容</h2>
 <p>請先將要填寫的文件格式整理好，當作後續自動化的「範本」。建議先使用 Word 來編輯排版，因為 Google 文件在表格編輯的彈性，可能不如 Word 方便。</p>
@@ -290,11 +234,11 @@
 <img src="create-a-form.jpg" alt="Google 表單示意圖"></p>
 <p>以下是常見問題類型與應用範例：</p>
 <ul>
-<li><strong>簡答題</strong>：例如會議名稱、填寫人等</li>
-<li><strong>詳答題</strong>：適合會議摘要、內容說明等需要多行輸入的部分</li>
-<li><strong>單選題</strong>：例如是否需要後續追蹤（是/否）</li>
-<li><strong>多選題</strong>：例如後續追蹤項目（多個項目可勾選）</li>
-<li><strong>日期題</strong>：例如會議日期、截止日期等</li>
+<li><strong>簡答題</strong>：會議名稱、填寫人等</li>
+<li><strong>詳答題</strong>：會議摘要、內容說明等</li>
+<li><strong>單選題</strong>：是否需要後續追蹤（是/否）</li>
+<li><strong>多選題</strong>：後續追蹤項目（可多選）</li>
+<li><strong>日期題</strong>：會議日期、截止日期等</li>
 </ul>
 <p>建議在「設定」分頁中，開啟「收集電子郵件地址」，方便後續追蹤或聯絡填表人：</p>
 <p><img src="allow-check-email.jpg" alt="開啟收集電子郵件地址示意圖"></p>
@@ -302,21 +246,31 @@
 <p>現在，你就可以先自行填寫一次，送出後即可在試算表中看到結果，請確認確保資料結構正確。</p>
 <p>下圖是回覆試算表的範例畫面：
 <img src="response-sheet-1.jpg" alt="回覆試算表示意圖"></p>
-<h2 id="section-3">3. 進入 Google Apps Script 編輯器</h2>
+<h2 id="section-3">3. 撰寫 Apps Script 程式碼</h2>
+<p>在回覆試算表中，點擊「擴充功能」，再按下「Apps Script」，就能開啟 Google Apps Script 的開發環境。</p>
+<p>下圖為Apps Scripts開啟位置：
+<img src="open-apps-script.jpg" alt="試算表擴充功能示意圖"></p>
+<p>進入後，建議先將專案重新命名（例如「會議記錄文件生成器」），接下來就可以開始撰寫自動化的程式碼了！</p>
+<h3 id="3-1-確認輸出位置取得id">3-1 確認輸出位置、取得ID</h3>
+<p>到 Google 雲端硬碟中，找到你想要放置自動產生文件的資料夾，也可以直接新建一個資料夾。</p>
+<p>接著，複製該資料夾的 ID。這個 ID 通常會顯示在瀏覽器網址列中，位於 <code>folders/</code> 後面，如下圖所示：</p>
+<p><img src="get-folder-id.jpg" alt="取得資料夾ID示意圖"></p>
+<p>同樣的方式，打開你準備好的 Google 文件模板，並從網址中找到該文件的 ID，位置在 <code>d/</code> 和 <code>/edit</code> 中間，如下圖所示：</p>
+<p><img src="get-docs-id.jpg" alt="取得文件ID示意圖"></p>
 <p>待續&hellip;</p>
 </section>
 
   <footer class="mt-12 flex flex-wrap"><a
       class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
-      href="https://yuunjiee.github.io/tags/google-apps-script"
+      href="http://localhost:1313/tags/google-apps-script"
       >Google Apps Script</a
     ><a
       class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
-      href="https://yuunjiee.github.io/tags/google-%E8%A1%A8%E5%96%AE"
+      href="http://localhost:1313/tags/google-%E8%A1%A8%E5%96%AE"
       >Google 表單</a
     ><a
       class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
-      href="https://yuunjiee.github.io/tags/%E8%87%AA%E5%8B%95%E5%8C%96"
+      href="http://localhost:1313/tags/%E8%87%AA%E5%8B%95%E5%8C%96"
       >自動化</a
     ></footer><div class="giscus mt-24"></div>
   <script
@@ -339,7 +293,7 @@
   class="mx-auto flex h-[4.5rem] max-w-(--w) items-center px-8 text-xs tracking-wider uppercase opacity-60"
 >
   <div class="mr-auto">&copy;2025
-    <a class="link" href="https://yuunjiee.github.io/">YuunJiee&#39;s Blog</a></div>
+    <a class="link" href="http://localhost:1313/">YuunJiee&#39;s Blog</a></div>
   <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
     >powered by hugo️️</a
   >️
