@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on YuunJiee&#39;s Blog</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://yuunjiee.github.io/tags/</link>
     <description>Recent content in Tags on YuunJiee&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>zh-TW</language>
     <lastBuildDate>Sat, 24 May 2025 01:35:30 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yuunjiee.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Google Apps Script</title>
-      <link>http://localhost:1313/tags/google-apps-script/</link>
+      <link>https://yuunjiee.github.io/tags/google-apps-script/</link>
       <pubDate>Sat, 24 May 2025 01:35:30 +0800</pubDate>
-      <guid>http://localhost:1313/tags/google-apps-script/</guid>
+      <guid>https://yuunjiee.github.io/tags/google-apps-script/</guid>
       <description></description>
     </item>
     <item>
       <title>Google 表單</title>
-      <link>http://localhost:1313/tags/google-%E8%A1%A8%E5%96%AE/</link>
+      <link>https://yuunjiee.github.io/tags/google-%E8%A1%A8%E5%96%AE/</link>
       <pubDate>Sat, 24 May 2025 01:35:30 +0800</pubDate>
-      <guid>http://localhost:1313/tags/google-%E8%A1%A8%E5%96%AE/</guid>
+      <guid>https://yuunjiee.github.io/tags/google-%E8%A1%A8%E5%96%AE/</guid>
       <description></description>
     </item>
     <item>
       <title>自動化</title>
-      <link>http://localhost:1313/tags/%E8%87%AA%E5%8B%95%E5%8C%96/</link>
+      <link>https://yuunjiee.github.io/tags/%E8%87%AA%E5%8B%95%E5%8C%96/</link>
       <pubDate>Sat, 24 May 2025 01:35:30 +0800</pubDate>
-      <guid>http://localhost:1313/tags/%E8%87%AA%E5%8B%95%E5%8C%96/</guid>
+      <guid>https://yuunjiee.github.io/tags/%E8%87%AA%E5%8B%95%E5%8C%96/</guid>
       <description></description>
     </item>
   </channel>
